@@ -46,22 +46,12 @@ logging.basicConfig(
 logger = logging.getLogger("customLogger")
 
 
-# class logger:   
-
-#     def info(e, sys):
-#         error_message = CustomException(e, sys)
-#         customLogger.info(error_message)
-
-#     def error(e, sys):
-#         error_message = CustomException(e, sys)
-#         customLogger.error(error_message)
-
-
-
 if __name__ == "__main__":
     
     try:
         a = 1/0
+        logger.info("Starting")
     except Exception as e:
-        logger.error(e, sys)
+        logger.error(CustomException(e, sys))
+        
         
