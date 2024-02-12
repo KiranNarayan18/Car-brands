@@ -1,5 +1,5 @@
 data_ingestion:
   url: "https://github.com/KiranNarayan18/datasets/blob/main/car-brands-dataset.zip"
-  root_dir: "artifacts/data"
+  root_dir: "datasets"
 
   

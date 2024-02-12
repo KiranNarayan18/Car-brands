@@ -17,3 +17,9 @@
 [ 2024-02-12 22:56:16,741 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
 [ 2024-02-12 22:56:16,741 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
 [ 2024-02-12 22:56:21,825 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:58:06,675 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:58:06,683 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-12 22:58:07,987 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:58:46,339 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:58:46,339 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-12 22:58:47,052 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
