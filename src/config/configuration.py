@@ -12,6 +12,8 @@ class ConfigurationManager:
     def __init__(
             self,
             config_file_path=CONFIG_FILE_PATH):
+        
+        
         self.config = read_yaml(config_file_path)
         
 
