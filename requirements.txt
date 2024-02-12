@@ -1,2 +1,5 @@
 tensorflow
 matplotlib
+PyYaml
+python-box
+ensure
