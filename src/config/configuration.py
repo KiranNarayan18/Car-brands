@@ -2,7 +2,7 @@ import os
 import sys
 
 from src.logger import logger, CustomException
-from src.utils import read_yaml
+from src.utils import read_yaml_file
 from src.constants import *
 from src.entity import (
                             DataIngestionConfig
@@ -13,8 +13,8 @@ class ConfigurationManager:
             self,
             config_file_path=CONFIG_FILE_PATH):
         
-        
-        self.config = read_yaml(config_file_path)
+
+        self.config = read_yaml_file(config_file_path)
         
 
     def DataIngestionConfig(self):
@@ -25,7 +25,7 @@ class ConfigurationManager:
 
             data_ingestion_config = DataIngestionConfig(
                 root_dir = config.root_dir,
-                source_url = config.source_url
+                url = config.url
             )
 
             return data_ingestion_config

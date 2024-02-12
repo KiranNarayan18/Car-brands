@@ -1,0 +1,19 @@
+[ 2024-02-12 22:45:37,603 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:45:37,603 ] - ERROR - data_ingestion_pipeline - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\pipeline\data_ingestion_pipeline.py] line number [16] error message [name 'read_yaml' is not defined]
+[ 2024-02-12 22:45:37,603 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:46:49,148 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:46:49,148 ] - ERROR - data_ingestion_pipeline - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\pipeline\data_ingestion_pipeline.py] line number [16] error message [name 'read_yaml' is not defined]
+[ 2024-02-12 22:46:49,148 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:50:09,025 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:50:09,025 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-12 22:50:09,025 ] - ERROR - configuration - "'ConfigBox' object has no attribute 'source_url'"
+[ 2024-02-12 22:50:09,025 ] - ERROR - data_ingestion - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\data_ingestion.py] line number [15] error message ['NoneType' object has no attribute 'root_dir']
+[ 2024-02-12 22:50:09,025 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:52:58,107 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:52:58,107 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-12 22:52:58,107 ] - ERROR - configuration - __init__() got an unexpected keyword argument 'source_url'
+[ 2024-02-12 22:52:58,107 ] - ERROR - data_ingestion - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\data_ingestion.py] line number [15] error message ['NoneType' object has no attribute 'root_dir']
+[ 2024-02-12 22:52:58,107 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<
+[ 2024-02-12 22:56:16,741 ] - INFO - main - >>>>>> stage Data Ingestion started <<<<<<
+[ 2024-02-12 22:56:16,741 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-12 22:56:21,825 ] - INFO - main - >>>>>> stage Data Ingestion completed <<<<<<

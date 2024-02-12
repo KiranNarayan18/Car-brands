@@ -13,7 +13,8 @@ class DataIngestionPipeline:
 
     def main(self):
         try:
-            config = ConfigurationManager().DataIngestionConfig()
+            config = ConfigurationManager()
+            config = config.DataIngestionConfig()
             data_ingestion = DataIngestion(config)
             data_ingestion.download_data()
 
