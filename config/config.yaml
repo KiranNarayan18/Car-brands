@@ -3,3 +3,6 @@ data_ingestion:
   root_dir: "datasets"
 
   
+model_training:
+  root_dir: "datasets"
+  model_dir: "models"
