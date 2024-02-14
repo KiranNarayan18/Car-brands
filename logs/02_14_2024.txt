@@ -1,0 +1,72 @@
+[ 2024-02-14 07:56:25,135 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 07:56:25,149 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 07:56:25,149 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [27] error message [Unknown argument(s): {'inpput_shape': [224, 244, 3]}]
+[ 2024-02-14 07:56:25,149 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 07:56:58,700 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 07:56:58,700 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 07:57:00,166 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [32] error message ['module' object is not callable]
+[ 2024-02-14 07:57:00,167 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 07:58:05,846 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 07:58:05,846 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 07:58:07,341 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [57] error message ['ModelTrainingConfig' object has no attribute 'train_path']
+[ 2024-02-14 07:58:07,353 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:00:17,681 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:00:17,681 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:00:19,231 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [56] error message [[WinError 3] The system cannot find the path specified: 'models/Train']
+[ 2024-02-14 08:00:19,231 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:00:55,506 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:00:55,510 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:00:56,946 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [56] error message [[WinError 3] The system cannot find the path specified: 'datasets/Train']
+[ 2024-02-14 08:00:56,946 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:02:22,878 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:02:22,878 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:02:24,248 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [73] error message [fit() got an unexpected keyword argument 'validation_dataset']
+[ 2024-02-14 08:02:24,248 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:03:23,660 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:03:23,662 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:03:29,500 ] - ERROR - model_training - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py] line number [73] error message [Graph execution error:
+
+Detected at node 'Adam/AssignAddVariableOp_2' defined at (most recent call last):
+    File "main.py", line 22, in <module>
+      model_training_obj.main()
+    File "D:\kiran\projects\deep_learning\Car-brands\src\pipeline\model_training_pipeline.py", line 18, in main
+      training_obj.train()
+    File "D:\kiran\projects\deep_learning\Car-brands\src\components\model_training.py", line 73, in train
+      r = model.fit(
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 1742, in fit
+      tmp_logs = self.train_function(iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 1338, in train_function
+      return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 1322, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 1303, in run_step
+      outputs = model.train_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 1084, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 544, in minimize
+      self.apply_gradients(grads_and_vars)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 1230, in apply_gradients
+      return super().apply_gradients(grads_and_vars, name=name)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 652, in apply_gradients
+      iteration = self._internal_apply_gradients(grads_and_vars)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 1260, in _internal_apply_gradients
+      return tf.__internal__.distribute.interim.maybe_merge_call(
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 1352, in _distributed_apply_gradients_fn
+      distribution.extended.update(
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 1349, in apply_grad_to_update_var
+      return self._update_step(grad, var)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\optimizer.py", line 241, in _update_step
+      self.update_step(gradient, variable)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\optimizers\adam.py", line 198, in update_step
+      m.assign_add((gradient - m) * (1 - self.beta_1))
+Node: 'Adam/AssignAddVariableOp_2'
+Cannot update variable with shape [1] using a Tensor with shape [3], shapes must be equal.
+	 [[{{node Adam/AssignAddVariableOp_2}}]] [Op:__inference_train_function_8859]]
+[ 2024-02-14 08:03:29,500 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:07:04,579 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:07:04,580 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:07:36,438 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:07:36,438 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:07:47,689 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
