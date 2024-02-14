@@ -70,3 +70,6 @@ Cannot update variable with shape [1] using a Tensor with shape [3], shapes must
 [ 2024-02-14 08:07:36,438 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
 [ 2024-02-14 08:07:36,438 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
 [ 2024-02-14 08:07:47,689 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-14 08:10:29,129 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-14 08:10:29,129 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-14 08:10:57,217 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
