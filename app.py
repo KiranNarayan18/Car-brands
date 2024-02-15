@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 from PIL import Image
 import numpy as np
 
+from prediction import Prediction
+
 
 app = Flask(__name__)
 
@@ -19,10 +21,14 @@ def upload_file():
         if file:
             # Load image
             image = Image.open(file)
-            # Predict image
-            predictions = "result"
+
+            open_cv_image = np.array(image)
+
+            model_obj = Prediction()
+            predictions = model_obj.predict(open_cv_image)
+
             # Render template with predictions
-            return render_template('result.html', predictions=predictions)
+            return render_template('results.html', predictions=predictions)
     return render_template('index.html')
 
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+import cv2
 import sys
 import numpy as np
 from tensorflow.keras.models import load_model
@@ -12,18 +13,22 @@ class Prediction:
 
     def predict(self,img):
         try:
-
-            model=load_model('model_resnet50.keras')
-            x=x/255
             
+            resize = cv2.resize(img, (224,224))
+            x=image.img_to_array(resize)
+
+            x=x/255
+
             x=np.expand_dims(x,axis=0)
             img_data=preprocess_input(x)
-
+            
+            model=load_model('models\model_resnet50.keras')
             model.predict(img_data)
 
-            np.argmax(model.predict(img_data), axis=1)
+            a=np.argmax(model.predict(img_data), axis=1)
 
-            
+            return a
+
 
         except Exception as error:
             logger.error(CustomException(error, sys))
