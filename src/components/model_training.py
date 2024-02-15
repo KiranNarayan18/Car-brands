@@ -22,7 +22,7 @@ class ModelTraining:
 
     def train(self):
         try:
-            IMAGE_SIZE = [224, 244]
+            IMAGE_SIZE = [224, 224]
 
             resnet = ResNet50(input_shape=IMAGE_SIZE + [3], weights='imagenet', include_top=False)
 
