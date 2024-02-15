@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 from PIL import Image
 import numpy as np
+from tensorflow.keras.preprocessing import image
 
 from prediction import Prediction
 
@@ -21,6 +22,8 @@ def upload_file():
         if file:
             # Load image
             image = Image.open(file)
+
+            # img =image.load_img(file,target_size=(224,224))
 
             open_cv_image = np.array(image)
 

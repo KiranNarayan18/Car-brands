@@ -14,13 +14,10 @@ class Prediction:
     def predict(self,img):
         try:
             
-            resize = cv2.resize(img, (224,224))
-            x=image.img_to_array(resize)
-
-            x=x/255
-
-            x=np.expand_dims(x,axis=0)
-            img_data=preprocess_input(x)
+            x = cv2.resize(img, (224,224))
+           
+            img_data = x.reshape(1,224,224,3)
+            x = x / 255
             
             model=load_model('models\model_resnet50.keras')
             model.predict(img_data)
@@ -33,3 +30,12 @@ class Prediction:
         except Exception as error:
             logger.error(CustomException(error, sys))
 
+
+if __name__ == "__main__":
+    
+    path = 'datasets/Test/lamborghini/10.jpg'
+
+    img =image.load_img(path,target_size=(224,224))
+  
+    obj = Prediction()
+    print(obj.predict(img))
