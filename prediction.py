@@ -23,8 +23,14 @@ class Prediction:
             model.predict(img_data)
 
             a=np.argmax(model.predict(img_data), axis=1)
+            
+            res_dict = {1: "audi",
+            2: "lamborghini",
+            3: "mercedes"}
 
-            return a
+            print('result', res_dict[a] )
+
+            return res_dict[a]
 
 
         except Exception as error:
