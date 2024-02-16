@@ -6,10 +6,12 @@
 </head>
 <body>
     <h1>Result</h1>
-    <ul>
-        {% for prediction in predictions %}
-            <li>{{ prediction }}</li>
-        {% endfor %}
-    </ul>
+    
+    {% set predictions_string = '' %}
+    {% for prediction in predictions %}
+        {% set predictions_string = predictions_string + prediction[1] + ', ' %}
+    {% endfor %}
+    <p>{{ predictions_string[:-2] }}</p>
+    
 </body>
 </html>

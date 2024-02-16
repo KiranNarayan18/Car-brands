@@ -72,7 +72,7 @@ class ModelTraining:
             r = model.fit(
                 train_dataset,
                 validation_data=test_dataset,
-                epochs=5,
+                epochs=250,
                 steps_per_epoch=len(train_dataset),
                 validation_steps=len(test_dataset)                
             )
