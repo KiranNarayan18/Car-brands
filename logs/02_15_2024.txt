@@ -12,3 +12,275 @@
 [ 2024-02-15 21:14:04,816 ] - INFO - _internal -  * Restarting with stat
 [ 2024-02-15 21:14:16,570 ] - WARNING - _internal -  * Debugger is active!
 [ 2024-02-15 21:14:16,570 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 21:24:23,447 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 21:24:23,447 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 21:24:23,447 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:24:37,615 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 21:24:37,636 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 21:24:44,784 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:24:44] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 21:25:08,635 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [26] error message [in user code:
+
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 244, 3), found shape=(None, 224, 224, 3)
+]
+[ 2024-02-15 21:25:08,643 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:25:08] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 21:25:08,681 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:25:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:25:08,681 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:25:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:25:08,702 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:25:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:25:08,751 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:25:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:29:53,149 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 21:29:53,424 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:30:19,966 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 21:30:19,966 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 21:30:19,966 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:30:31,781 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 21:30:31,787 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 21:30:31,802 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:30:31] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 21:31:12,619 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [28] error message [Failed to find data adapter that can handle input: <class 'NoneType'>, <class 'NoneType'>]
+[ 2024-02-15 21:31:12,623 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:31:12] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 21:31:12,646 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:31:12] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:31:12,647 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:31:12] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:31:12,658 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:31:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:31:12,708 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 21:31:12] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 21:32:22,199 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 21:32:22,444 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:32:34,377 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 21:32:34,377 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 21:33:46,071 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 21:33:46,320 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:33:58,214 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 21:33:58,214 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 21:33:59,243 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 21:33:59,470 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 21:34:36,192 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [28] error message [in user code:
+
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 244, 3), found shape=(None, 224, 224, 3)
+]
+[ 2024-02-15 21:39:10,026 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [17] error message [OpenCV(4.9.0) :-1: error: (-5:Bad argument) in function 'resize'
+> Overload resolution failed:
+>  - src is not a numpy array, neither a scalar
+>  - Expected Ptr<cv::UMat> for argument 'src'
+]
+[ 2024-02-15 22:10:15,897 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [20] error message [unsupported operand type(s) for /: 'Image' and 'int']
+[ 2024-02-15 22:11:26,403 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [20] error message [unsupported operand type(s) for /: 'Image' and 'int']
+[ 2024-02-15 22:12:27,969 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [20] error message [unsupported operand type(s) for /: 'Image' and 'int']
+[ 2024-02-15 22:13:19,278 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [28] error message [in user code:
+
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 244, 3), found shape=(None, 224, 224, 3)
+]
+[ 2024-02-15 22:14:04,094 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [28] error message [in user code:
+
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 244, 3), found shape=(None, 224, 224, 3)
+]
+[ 2024-02-15 22:14:50,218 ] - ERROR - prediction - Error Occured in python script name [prediction.py] line number [28] error message [in user code:
+
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2341, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2327, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2315, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\training.py", line 2283, in predict_step
+        return self(x, training=False)
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\kiran\projects\deep_learning\Car-brands\env\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 244, 3), found shape=(None, 224, 224, 3)
+]
+[ 2024-02-15 22:17:50,284 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-15 22:17:50,284 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-15 22:18:14,388 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-15 22:22:36,619 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:22:36,619 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:22:36,619 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:22:48,579 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:22:48,594 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:22:48,598 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:22:48] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:23:36,145 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:23:36] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 22:23:36,160 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:23:36] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:23:36,162 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:23:36] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:23:36,193 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:23:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:23:36,206 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:23:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:24:12,478 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\app.py', reloading
+[ 2024-02-15 22:24:12,745 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:24:39,560 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:24:39,572 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:24:39,578 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:24:53,502 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:24:53,518 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:26:17,744 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:17] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:26:28,621 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:28] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 22:26:28,634 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:26:28,635 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:26:28,667 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:26:28,677 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:26:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:28:22,903 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:28:22,903 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:28:22,917 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:28:36,821 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:28:36,825 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:28:36,843 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:28:36] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:28:44,708 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:28:44] "POST / HTTP/1.1" 200 -
+[ 2024-02-15 22:28:51,169 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:28:51] "POST / HTTP/1.1" 200 -
+[ 2024-02-15 22:30:50,623 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 22:30:50,930 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:35:01,804 ] - INFO - main - >>>>>> stage Model Training started <<<<<<
+[ 2024-02-15 22:35:01,804 ] - INFO - __init__ - yaml file: config\config.yaml loaded successfully
+[ 2024-02-15 22:48:55,731 ] - INFO - main - >>>>>> stage Model Training completed <<<<<<
+[ 2024-02-15 22:51:16,947 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:51:16,947 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:51:16,951 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:51:28,833 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:51:28,833 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:51:28,853 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:51:28] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:51:49,669 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:51:49] "POST / HTTP/1.1" 200 -
+[ 2024-02-15 22:54:16,906 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 22:54:17,190 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:54:59,692 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:54:59,694 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:54:59,697 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:55:13,704 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:55:13,718 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:56:26,728 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 22:56:26,733 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 22:56:26,736 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 22:56:38,597 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 22:56:38,601 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 22:56:38,613 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:56:38] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:56:38,615 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:56:38] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 22:57:09,291 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 22:57:09,324 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:57:09] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 22:57:09,350 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:57:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:57:09,353 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:57:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:57:09,379 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:57:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 22:57:09,388 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 22:57:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:01:26,818 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 23:01:26,818 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 23:01:26,832 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:01:39,964 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 23:01:39,976 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 23:01:55,414 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:01:55,451 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:01:55] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:01:57,191 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:01:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:01:57,193 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:01:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:01:57,209 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:01:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:01:57,262 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:01:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:02:20,576 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:02:20,602 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:02:20] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:02:53,447 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 23:02:53,447 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 23:02:53,454 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:03:06,775 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 23:03:06,784 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 23:03:21,567 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:03:21,600 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:21] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:03:21,616 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:21] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:03:21,616 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:21] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:03:21,630 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:21] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:03:21,641 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:21] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:03:52,019 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:03:52] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 23:04:01,884 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:04:01,926 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:01] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:04:14,410 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:04:14,434 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:14] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:04:14,456 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:04:14,459 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:04:14,517 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:04:14,528 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:04:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:05:52,169 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 23:05:52,169 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 23:05:52,169 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:06:06,040 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 23:06:06,052 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 23:06:06,092 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:06:06] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 23:06:06,095 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:06:06] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 23:06:26,690 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:06:26,694 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:06:26] "POST / HTTP/1.1" 200 -
+[ 2024-02-15 23:08:37,030 ] - INFO - _internal -  * Detected change in 'D:\\kiran\\projects\\deep_learning\\Car-brands\\prediction.py', reloading
+[ 2024-02-15 23:08:37,301 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:09:04,145 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 23:09:04,153 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 23:09:04,161 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:09:16,215 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 23:09:16,215 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 23:09:16,231 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:09:16] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 23:09:39,749 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:09:39,763 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:09:39] "POST / HTTP/1.1" 200 -
+[ 2024-02-15 23:11:32,586 ] - INFO - _internal - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-02-15 23:11:32,586 ] - INFO - _internal - [33mPress CTRL+C to quit[0m
+[ 2024-02-15 23:11:32,593 ] - INFO - _internal -  * Restarting with stat
+[ 2024-02-15 23:11:46,355 ] - WARNING - _internal -  * Debugger is active!
+[ 2024-02-15 23:11:46,365 ] - INFO - _internal -  * Debugger PIN: 987-152-812
+[ 2024-02-15 23:11:46,404 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:11:46] "GET / HTTP/1.1" 200 -
+[ 2024-02-15 23:15:14,760 ] - ERROR - prediction - Error Occured in python script name [D:\kiran\projects\deep_learning\Car-brands\prediction.py] line number [31] error message [unhashable type: 'numpy.ndarray']
+[ 2024-02-15 23:15:14,799 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:15:14] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2024-02-15 23:15:14,845 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:15:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:15:14,846 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:15:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:15:14,882 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:15:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-02-15 23:15:14,897 ] - INFO - _internal - 127.0.0.1 - - [15/Feb/2024 23:15:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
