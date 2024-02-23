@@ -36,8 +36,8 @@ class ModelTraining:
             prediction = Dense(len(folders), activation='softmax')(x)   
             model = Model(inputs=resnet.input, outputs=prediction)
 
-            print("Model Summary")
-            print(model.summary())
+            # print("Model Summary")
+            # print(model.summary())
 
             model.compile(
                     optimizer='adam',
