@@ -1,3 +1,5 @@
+import sys
+
 from src.logger import logger, CustomException
 
 from src.config.configuration import ConfigurationManager
