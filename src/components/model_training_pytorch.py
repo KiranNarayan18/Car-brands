@@ -16,7 +16,6 @@ from src.config.configuration import ModelTrainingConfig
 from pathlib import Path
 
 
-
 class CustomDataset(torch.utils.data.Dataset):
     def __init__(self, folder_path, transform=None):
         self.data = datasets.ImageFolder(root=folder_path, transform=transform)
@@ -71,6 +70,11 @@ class ModelTrainingPytorch:
             optimizer = torch.optim.Adam(model.fc.parameters())
 
             NUM_OF_EPOCHS = self.model_config.epochs
+            train_losses = []
+            test_losses = []
+            train_accuracies = []
+            test_accuracies = []
+
 
             for epoch in range(NUM_OF_EPOCHS):
                 model.train()
@@ -83,6 +87,7 @@ class ModelTrainingPytorch:
                     outputs = model(images)
                     loss = cost_fun(outputs, labels)
                     loss.backward()
+                    optimizer.step()
 
                     running_loss += loss.item()
                     _, predicted = outputs.max(1)
@@ -93,27 +98,65 @@ class ModelTrainingPytorch:
                 train_loss = running_loss / len(train_loader)
                 train_accuracy = 100. * correct / total
 
+                train_losses.append(train_loss)
+                train_accuracies.append(train_accuracy)
+
 
                 ## validation
                 model.eval()
                 correct = 0
                 total = 0
+                test_loss = 0
 
                 with torch.no_grad():
                     for images, labels in test_loader:
                         outputs = model(images)
+                        loss = cost_fun(outputs, labels)
+                        test_loss += loss.item()
                         _, predicted = outputs.max(1)
                         total += labels.size(0)
                         correct += predicted.eq(labels).sum().item()
 
 
+                test_loss /= len(test_loader)
                 test_accuracy = 100. * correct / total
+                test_losses.append(test_loss)
+                test_accuracies.append(test_accuracy)
 
 
                 logger.info(f'Epoch [{epoch + 1}/{NUM_OF_EPOCHS}], '
                     f'Train Loss: {train_loss:.4f}, '
                     f'Train Accuracy: {train_accuracy:.2f}%, '
                     f'Test Accuracy: {test_accuracy:.2f}%')
+                
+
+            plt.figure(figsize=(10, 5))
+
+            # Plotting Loss
+            plt.subplot(1, 2, 1)
+            plt.plot(train_losses, label='Train Loss')
+            plt.plot(test_losses, label='Test Loss')
+            plt.xlabel('Epoch')
+            plt.ylabel('Loss')
+            plt.title('Loss Curve')
+            plt.legend()
+
+            # Plotting Accuracy
+            plt.subplot(1, 2, 2)
+            plt.plot(train_accuracies, label='Train Accuracy')
+            plt.plot(test_accuracies, label='Test Accuracy')
+            plt.xlabel('Epoch')
+            plt.ylabel('Accuracy')
+            plt.title('Accuracy Curve')
+            plt.legend()
+
+            # Save plots
+            plt.savefig(f'{self.config.model_dir}/Loss_Accuracy_Curves.png')
+
+            # Save the trained model
+            torch.save(model.state_dict(), f'{self.config.model_dir}/model_resnet50.pth')
+
+
 
 
         except Exception as error:

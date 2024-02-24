@@ -1,4 +1,4 @@
 MODEL_CONFIG:
   image_size : [224, 224]
   batch_size: 32
-  epochs: 5
+  epochs: 50
